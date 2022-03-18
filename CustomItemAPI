@@ -1,6 +1,3 @@
-$item = new BasicItem(new ItemIdentifier(1000,0),"name", "texture name in texture_item.json", /*max stack size*/16);
-$item->addToServer();
-
 BasicItem:
    - onInteract
    - onDestroyBlock
@@ -25,4 +22,4 @@ FoodItem:
    - onDestroyBlock
    - onClickAir
    - onAttackEntity
-   - onConsume 
+   - onConsume
