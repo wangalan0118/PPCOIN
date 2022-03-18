@@ -8,10 +8,7 @@
 
 /* SwordItem*/ use Refaltor\CustomItemAPI\Items\SwordItem;
 
-為了尋找古代文物，我們將以下線索依序解鎖！
-
  PluginBase::onLoad()：
  $item = new ShovelItem(new ItemIdentifier($id, $meta), $name, $tier, $mining_efficiency, $durability, $texture_path);
 $item->addToServer();
 
-如解鎖成功，此檔永久失效，自動創建新檔！
