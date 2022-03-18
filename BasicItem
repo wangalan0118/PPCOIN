@@ -1,0 +1,8 @@
+$item = new BasicItem(new ItemIdentifier(1000,0),"name", "texture name in texture_item.json", /*max stack size:*/16);
+
+// arguments are mandatory not to cause a crash /!\
+$item->setInteractListener(function(Player $player, Block $replace, Block $clicked, int $face, Vector3 $clickVector, Item $item): {
+   $player->sendMessage("You’re interacting with your item !");
+});
+
+$item->addToServer();
