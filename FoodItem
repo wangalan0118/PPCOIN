@@ -1,1 +1,9 @@
 use Refaltor\CustomItemAPI\Items\FoodItem;
+
+ PluginBase : : onLoad (     )：
+  $ item = new FoodItem ( new ItemIdentifier
+   ( 
+  $ id , 
+  $ meta ) , 
+  $ name , /* int */$food_restore, /* float */$saturation_restore, $texture_path, $max_stack_size) ; 
+  $ item->addToServer (     ) ; 
