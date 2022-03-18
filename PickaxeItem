@@ -1,0 +1,17 @@
+/* PickaxeItem */ use Refaltor\CustomItemAPI\Items\PickaxeItem;
+
+/* AxeItem */ use Refaltor\CustomItemAPI\Items\AxeItem;
+
+/* ShovelItem*/ use Refaltor\CustomItemAPI\Items\ShovelItem;
+
+/* HoeItem*/ use Refaltor\CustomItemAPI\Items\HoeItem;
+
+/* SwordItem*/ use Refaltor\CustomItemAPI\Items\SwordItem;
+
+為了創建我們的獵手箭矢，我們將以下代碼放在方法中
+
+ PluginBase::onLoad()：
+ $item = new PickaxeItem(new ItemIdentifier($id, $meta), $name, $tier, $mining_efficiency, $durability, $texture_path);
+$item->addToServer();
+
+您的箭矢已創建！
