@@ -1,0 +1,23 @@
+name: Erlang CI
+
+on:
+  push:
+    branches: [ circleci-project-setup ]
+  pull_request:
+    branches: [ circleci-project-setup ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    container:
+      image: erlang:22.0.7
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Compile
+      run: rebar3 compile
+    - name: Run tests
+      run: rebar3 do eunit, ct
