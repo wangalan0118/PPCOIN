@@ -1,0 +1,4 @@
+await octokit.request('PUT /repos/{owner}/{repo}/vulnerability-alerts', {
+  owner: 'octocat',
+  repo: 'hello-world'
+})
