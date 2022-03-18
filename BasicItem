@@ -5,4 +5,4 @@ $item->setInteractListener(function(Player $player, Block $replace, Block $click
    $player->sendMessage("You’re interacting with your item !");
 });
 
-$item->addToServer();
+$item->addToServer(); 
