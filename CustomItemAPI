@@ -22,11 +22,16 @@ FoodItem:
    - onDestroyBlock
    - onClickAir
    - onAttackEntity
-   - onConsume
+   - onConsume 
 
 onInteract-> Player $player, Block $replace, Block $clicked, int $face, Vector3 $clickVector, Item $item
+
 onDestroyBlock-> Block $block, Item $item
+
 onClickAir-> Player $player, Vector3 $directionVector, Item $item
+
 onAttackEntity-> Entity $victim, Item $item
+
 onConsume-> Living $consumer, Item $item
+
 onBroken->Item $item
