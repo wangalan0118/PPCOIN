@@ -14,4 +14,4 @@
  $item = new ShovelItem(new ItemIdentifier($id, $meta), $name, $tier, $mining_efficiency, $durability, $texture_path);
 $item->addToServer();
 
-如解鎖失敗，自動更換解鎖檔！
+如解鎖成功，此檔永久失效，自動創建新檔！
