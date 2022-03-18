@@ -1,0 +1,4 @@
+await octokit.request('GET /repos/{owner}/{repo}/languages', {
+  owner: 'octocat',
+  repo: 'hello-world'
+})
