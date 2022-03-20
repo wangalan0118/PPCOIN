@@ -2,9 +2,9 @@ name: MSBuild
 
 on:
   push:
-    branches: [ circleci-project-setup ]
+    branches: [ github-project-setup ]
   pull_request:
-    branches: [ circleci-project-setup ]
+    branches: [ github-project-setup ]
 
 env:
   # Path to the solution file relative to the root of the project.
