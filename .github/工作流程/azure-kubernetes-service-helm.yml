@@ -35,7 +35,7 @@ name: Build and deploy an app to AKS with Helm
 on:
   push:
     branches:
-      - circleci-project-setup
+      - github-project-setup
   workflow_dispatch:
 
 env:
