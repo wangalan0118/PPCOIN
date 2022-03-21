@@ -5,9 +5,9 @@ name: Java CI
 
 on:
   push:
-    branches: [ circleci-project-setup ]
+    branches: [ github-project-setup ]
   pull_request:
-    branches: [ circleci-project-setup ]
+    branches: [ github-project-setup ]
 
 jobs:
   build:
