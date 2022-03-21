@@ -32,9 +32,9 @@ on:
   # Triggers the workflow on push or pull request events but only for the circleci-project-setup branch
   # Customize trigger events based on your DevSecOps processes.
   push:
-    branches: [ circleci-project-setup ]
+    branches: [ github-project-setup ]
   pull_request:
-    branches: [ circleci-project-setup ]
+    branches: [ github-project-setup ]
   schedule:
     - cron: '29 9 * * 6'
 
