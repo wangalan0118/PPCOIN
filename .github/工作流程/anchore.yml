@@ -13,10 +13,10 @@ name: Anchore Container Scan
 
 on:
   push:
-    branches: [ circleci-project-setup ]
+    branches: [ github-project-setup ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ circleci-project-setup ]
+    branches: [ github-project-setup ]
   schedule:
     - cron: '21 18 * * 5'
 
