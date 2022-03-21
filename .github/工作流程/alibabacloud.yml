@@ -22,7 +22,7 @@ name: Build and Deploy to ACK
 on:
   push:
     branches:
-      - circleci-project-setup
+      - github-project-setup
 
 # Environment variables available to all jobs and steps in this workflow.
 env:
